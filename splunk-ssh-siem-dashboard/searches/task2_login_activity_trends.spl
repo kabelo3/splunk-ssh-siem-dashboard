@@ -1,0 +1,12 @@
+### Task 2: Login Activity Trends
+### Goal: Visualize login behavior over time and detect spikes.
+### As actually implemented in the dashboard (source=ssh_logs_new.json, host=windows)
+
+## Panel 2.1 - Failed Logins by Username (Bar Chart)
+source="ssh_logs_new.json" host="windows" sourcetype="_json" event_type="Failed SSH Login"
+| top username
+
+
+## Panel 2.2 - Possible Brute Force by IP Address (Statistics Table)
+source="ssh_logs_new.json" host="windows" sourcetype="_json" event_type="Multiple Failed Authentication Attempts"
+| top id.orig_h

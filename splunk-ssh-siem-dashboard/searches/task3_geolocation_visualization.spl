@@ -1,0 +1,12 @@
+### Task 3: Visualizing Brute Force Attack in Geo-location
+### As actually implemented in the dashboard (source=ssh_logs_new.json, host=LinuxNew)
+### NOTE: this panel's host value differs from Task 1/2 ("LinuxNew" vs "windows") -
+### double check this if the map renders with no shaded countries, since a host
+### mismatch against the ingested data will return zero results.
+
+## Panel 3.1 - Brute Force Attack with Geo-location (Choropleth Map)
+source="ssh_logs_new.json" host="LinuxNew" sourcetype="_json" event_type="Multiple Failed Authentication Attempts"
+| table id.orig_h
+| iplocation id.orig_h
+| stats count by Country
+| geom geo_countries featureIdField="Country"
