@@ -12,21 +12,13 @@ A shared time range token (time\_range) drives every panel, so the whole dashboa
 
 Dashboard Preview
 Task 1 — Authentication Overview
-![Authentication Overview](screenshots/task1_full_authentication_overview.png)
-
 Total SSH Events, Successful Logins, Failed Logins, and Connection without Authentication, all sharing the same time picker.
 
 Task 2 — Login Activity Trends
 Failed Logins by Username
-
-![Failed Logins by Username](screenshots/task2_1_failed_logins_by_username_result.png)
-
 Possible Brute Force by IP Address
 
-![Possible Brute Force by IP Address](screenshots/task2_2_possible_brute_force_by_ip_result.png)
-
 Task 3 — Brute Force Geo-location
-![Brute Force Geo-location Map](screenshots/task3_1_geolocation_map_result.png)
 
 The US, China, and Brazil stand out as the top sources of failed-authentication attempts in this dataset, with the US in the highest bucket (80–100 attempts).
 
